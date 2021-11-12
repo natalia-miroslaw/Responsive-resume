@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url("fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
+
+* {
+    font-family: 'Poppins';
+    box-sizing: border-box;
+}
+
+.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    /*border: 1px solid #483845;*/
+}
+
+aside, section {
+    padding: 50px 35px !important;
+}
+
+aside {
+    color: white;
+    background-color: #483845;
+    text-transform: uppercase;
+}
+
+.photo {
+    display: flex;
+    justify-content: center !important;
+}
+
+img {
+    border: 4px solid #54012a;
+    border-radius: 50%;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.info, .skills, .experience {
+    margin-bottom: 50px;
+}
+
+h2 {
+    border: 1px solid;
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+
+.left-side h2 {
+    border-color: white;
+}
+
+.info-details, .skill-names {
+    margin-left: 10px;
+}
+
+/* .skill-names {
+    margin-right: -10px;
+} */
+
+.skills-column {
+    display: grid;
+}
+
+.skill-1, .skill-2, .skill-3, .skill-4, .skill-5, .skill-6, .skill-7 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid white;
+    padding-top: 35px;
+    line-height: 0;
+}
+
+.skill-1 {
+    padding-top: unset;
+}
+
+section {
+    background-color: #fdfdfd !important;
+}
+
+section h2, h3, h4, .date {
+    color: #54012a;
+    text-transform: uppercase;
+}
+
+section h2 {
+    border-color: #54012a;
+    width: 370px;
+}
+
+.experience {
+    display: grid;
+}
+
+.time-1, .time-2, .time-3 {
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: 2px solid black;
+}
+
+.exp-details-1, .exp-details-2, .exp-details-3 {
+    padding-left: 20px;
+    padding-bottom: 30px;
+}
+
+.time-1 {
+    grid-row: 1;
+    grid-column: 1;
+}
+
+.exp-details-1 {
+    grid-row: 1;
+    grid-column: 2;
+}
+
+h3, .time-1, .time-2, .time-3 {
+    font-weight: bold;
+}
+
+h4 {
+    line-height: 15px;
+    font-size: 18px;
+    padding-bottom: 15px;
+}
+
+.description {
+    text-align: justify;
+}
