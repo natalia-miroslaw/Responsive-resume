@@ -10,7 +10,7 @@
 
 .container {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 
 #left-side, #right-side {
@@ -31,6 +31,8 @@ aside {
 img {
     border: 4px solid #54012a;
     border-radius: 50%;
+    width: 200px;
+    height: auto;
 }
 
 h1 {
@@ -51,7 +53,6 @@ h2 {
     padding: 10px;
     margin-bottom: 40px;
 }
-
 
 aside h2 {
     border-color: white;
@@ -82,7 +83,7 @@ aside h2 {
     padding-top: unset;
 }
 
-section, footer {
+section {
     background-color: #fdfdfd;
 }
 
@@ -133,10 +134,49 @@ h4 {
 
 .description {
     text-align: justify;
+    color: black;
 }
 
-footer {
+footer{
     text-align: center;
     font-size: 13px;
     padding: 15px;
 }
+
+#footer {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    color: black;
+    background-image: linear-gradient(
+            to right,
+            #483845 0%,
+            #483845 33.3%,
+            #fdfdfd 0%,
+            #fdfdfd 100%
+    );
+}
+
+#footer-text {
+    background: linear-gradient(to right, white 0%, white 33.3%, black 0%, black 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 15px;
+}
+
+@media screen and (max-width: 767px) {
+    #footer {
+        background-image: none;
+    }
+
+    #footer-text {
+        background: unset;
+        -webkit-background-clip: unset;
+        -webkit-text-fill-color: unset;
+        color: black;
+        background-color: #fdfdfd;
+        padding: 10px 35px;
+    }
+}
+
+
+
